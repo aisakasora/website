@@ -1,0 +1,57 @@
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    top: 81px;
+    width: 100%;
+    height: auto;
+}
+
+.login {
+    position: relative;
+    margin: 0px;
+    padding-top: 281px;
+    height: 544px;
+}
+
+.logo2 {
+    text-align: right;
+    padding-top: 281px;
+    padding-right: 10px auto;
+}
+
+.login form {
+    position: relative;
+    padding-top: 81px;
+    text-align: left;
+    padding-left: 10px auto;
+}
+
+.Introduction {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    top: 81px;
+    width: auto;
+    height: 544px;
+}
+
+.main container {
+    position: relative;
+    top: 81px;
+}
+
+.right menu {
+    position: relative;
+    padding-top: 250px;
+}
