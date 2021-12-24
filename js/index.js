@@ -5,4 +5,12 @@ $(function() {
     $(".test").modal({
         closable: true
     });
+    $('.ui.sticky')
+        .sticky({
+            context: '#photo1'
+        });
+
+    $('.special.cards .image').dimmer({
+        on: 'hover'
+    });
 });
