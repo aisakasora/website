@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="一个胶片爱好者的用爱发电。">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="js/animate.js"></script>
+    <script src="js/index.js"></script>
+    <link href="https://cdn.bootcdn.net/ajax/libs/semantic-ui/2.4.1/semantic.css" rel="stylesheet">
+    <script src="https://cdn.bootcdn.net/ajax/libs/semantic-ui/2.4.1/semantic.js"></script>
+
+
+
+
+</head>
+
+
+<body>
+    <!-- 网页主体 -->
+    <div id="app" class="pc" style="height: 100%;">
+        <!-- 导航栏 -->
+        <div class="ui top fixed menu" style="height: 80px;">
+
+            <a href="index.html"><img src="./img/logo.png" style="height: 80px;width: auto;"> </a>
+
+            <a class="item"></a>
+            <a class="item" href="./Medium_format.html">中画幅</a>
+            <a class="item" href="#">全画幅</a>
+            <!-- 右侧菜单 -->
+            <div class="right menu">
+                <a class="item">
+                    <div class="ui animated fade button" tabindex="0">
+                        <div class="visible content">
+                            <i class="user icon"></i>
+                        </div>
+                        <div class="hidden content" id="test">登录 </div>
+                    </div>
+                </a>
+                <a class="item">
+                    <div class="ui animated fade button" tabindex="0">
+                        <div class="visible content">
+                            <i class="user plus icon"></i>
+                        </div>
+                        <div class="hidden content" onclick="window.location.href='./register.html'">注册 </div>
+                    </div>
+                </a>
+            </div>
+
+
+
+        </div>
+
+        <div class="main container">
+            <div class="photobar" id="photo1">
+                <div class="ui right dividing rail" style="left: 76%;padding-top: 50px;">
+                    <div class="ui sticky">
+                        <div class="ui vertical following fluid accordion text menu">
+                            <div class="item" style="padding-top: 50px;">
+                                <a class="active title">
+                                    <i class="dropdown icon"></i>
+                                    <h4 class="ui header">导航</h4>
+                                </a>
+                                <div class="active content menu">
+                                    <a class="item" href="#negative">图片详情</a>
+                                    <a class="item" href="#B_W">评论</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="img title" style="padding-top: 50px;padding-left: 270px;">
+                    <h2 class="ui dividing huge header">
+                        图片详情
+                        <a class="anchor" id="types"></a>
+                    </h2>
+                    <div class="img_header">
+                        <div class="ui items">
+                            <div class="item">
+                                <div class="image" style="width: 600px;height: 600px;margin: 0px;">
+                                    <img src="./img/N1.jpg">
+                                </div>
+                                <div class="content" style="padding-top: 50px;">
+                                    <a class="huge header">秋日浅红</a>
+                                    <div class="meta">
+                                        <span>详情</span>
+                                    </div>
+                                    <div class="description">
+                                        <ul class="ui list">
+                                            <li>使用相机：Minolta AutoCord</li>
+                                            <li>使用胶卷：Kodrk Portra400</li>
+                                            <li>拍摄地点：中国 广东 广州</li>
+                                            <li>感受：和朋友在琶洲塔附近的公园闲逛，遇上了少有的好天气。</br>
+                                                一片的花草沐浴着阳光，明明是秋天却有春天的意向。</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="ui comments">
+                            <h3 class="ui dividing header">评论</h3>
+
+                            <div class="comment">
+                                <a class="avatar">
+                                    <img src="./img/sora.jpg">
+                                </a>
+                                <div class="content">
+                                    <a class="author">Sora</a>
+                                    <div class="metadata">
+                                        <span class="date">12月24日12:30</span>
+                                    </div>
+                                    <div class="text">
+                                        <p>胶片的质感真的太喜欢了！</p>
+                                    </div>
+                                    <div class="actions">
+                                        <a class="reply">回复</a>
+                                    </div>
+                                </div>
+                                <div class="comments">
+                                    <div class="comment">
+                                        <a class="avatar">
+                                            <img src="./img/jabin.jpg">
+                                        </a>
+                                        <div class="content">
+                                            <a class="author">Jabin</a>
+                                            <div class="metadata">
+                                                <span class="date">刚刚</span>
+                                            </div>
+                                            <div class="text">感觉...不如...手机... </div>
+                                            <div class="actions">
+                                                <a class="reply">回复</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <form class="ui reply form">
+                                <div class="field">
+                                    <textarea></textarea>
+                                </div>
+                                <div class="ui blue labeled submit icon button">
+                                    <i class="icon edit"></i> 发布评论
+                                </div>
+                            </form>
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="ui divider"></div>
+            <div class="ui list" style="padding: 50px;padding-left: 275px;">
+                <div class="item">
+                    <i class="users icon"></i>
+                    <div class="content">
+                        Geisha Porject
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="marker icon"></i>
+                    <div class="content">
+                        Guang Zhou, GZ
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="mail icon"></i>
+                    <div class="content">
+                        <a href="mailto:jack@semantic-ui.com">aisakasora@icloud.com</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="linkify icon"></i>
+                    <div class="content">
+                        <a href="http://www.semantic-ui.com">https://github.com/aisakasora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+
+    <!-- 注册弹出框 -->
+    <div class="ui modal test">
+        <i class="close icon"></i>
+        <div class="header">
+            订阅本网站
+        </div>
+        <div class="image content">
+            <div class="ui medium image">
+                <img src="./img/logo2.png" style="width: auto;height: 300px;">
+            </div>
+            <div class="description">
+                <div class="ui header">留下您的邮箱</div>
+                <p>只要您订阅我们，我们在更新图库时会邮件通知您</p>
+                <form class="ui form">
+                    <div class="field">
+                        <label>我们该如何称呼您</label>
+                        <input type="text" name="first-name" placeholder="昵称/姓名">
+                    </div>
+                    <div class="field">
+                        <label>您的邮件地址</label>
+                        <input type="text" name="last-name" placeholder="邮件地址">
+                    </div>
+                    <div class="field">
+                        <div class="ui checkbox">
+                            <input type="checkbox" tabindex="0" class="hidden">
+                            <label>我同意接收来自本网站的邮件</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="actions">
+            <div class="ui black deny button">
+                取消
+            </div>
+            <div class="ui positive right labeled icon button">
+                确认订阅
+                <i class="checkmark icon"></i>
+            </div>
+        </div>
+    </div>
+
+
+</body>
