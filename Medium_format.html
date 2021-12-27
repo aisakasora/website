@@ -27,9 +27,18 @@
             <a href="index.html"><img src="./img/logo.png" style="height: 80px;width: auto;"> </a>
 
             <a class="item"></a>
-            <a class="item" href="./Medium format.html">中画幅</a>
             <a class="item" href="./full_frame.html">全画幅</a>
-            <a class="item" href="./video.html">VLOG</a>
+            <a class="item" href="./Medium_format.html">中画幅</a>
+            <a class="item" href="./video.html">视频作品</a>
+            <a class="item">
+                <div class="ui search">
+                    <div class="ui icon input">
+                        <input class="prompt" type="text" placeholder="搜索作品……(暂无数据)">
+                        <i class="search icon"></i>
+                    </div>
+                    <div class="results"></div>
+                </div>
+            </a>
             <!-- 右侧菜单 -->
             <div class="right menu">
                 <a class="item">
@@ -40,7 +49,7 @@
                         <div class="hidden content" id="test">登录 </div>
                     </div>
                 </a>
-                
+
             </div>
 
 
@@ -49,7 +58,7 @@
 
         <div class="main container">
             <div class="photobar" id="photo1">
-                <div class="ui right dividing rail" style="left: 76%;padding-top: 50px;">
+                <div class="ui right dividing rail" style="position: absolute; left: 76%;">
                     <div class="ui sticky">
                         <div class="ui vertical following fluid accordion text menu">
                             <div class="item" style="padding-top: 100px;">
@@ -67,7 +76,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="img title" style="max-width:78%; padding-top: 100px;padding-left: 270px;">
+                <div class="img title" style="max-width:78%; padding-top: 100px;padding-left: 265px;">
                     <h2 class="ui dividing huge header">
                         中画幅
                         <a class="anchor" id="types"></a>
@@ -75,264 +84,20 @@
                     <div class="img_header">
                         <h4 class="ui large header" id="negative">彩色负片</h4>
                         <p></p>
-                        <div class="ui special cards">
-                            <div class="card">
-                                <div class="blurring dimmable image">
-                                    <div class="ui dimmer">
-                                        <div class="content">
-                                            <div class="center">
-                                                <div class="ui inverted button" onclick="window.location.href='./img_description.html'">高清原图</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <img src="./img_min/120/negative/N1_min.jpg">
-                                </div>
-                                <div class="content">
-                                    <div class="header">秋日浅红</div>
-                                    <div class="meta">
-                                        <a>Kodrk Portra400</a>
-                                    </div>
-                                    <div class="description">
-                                        琶洲塔附近的公园里，秋风与花朵共舞。
-                                    </div>
-                                </div>
-                                <div class="extra content">
-                                    <span class="right floated">2021年11月 </span>
-                                    <span><i class="user icon"></i> Photo by 空空 </span>
-                                </div>
-
-                            </div>
-                            <div class="card">
-                                <div class="blurring dimmable image">
-                                    <div class="ui dimmer">
-                                        <div class="content">
-                                            <div class="center">
-                                                <div class="ui inverted button" onclick="window.location.href='./img_description.html'">高清原图</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <img src="./img_min/120/negative/N2_min.jpg">
-                                </div>
-                                <div class="content">
-                                    <div class="header">日暮校园</div>
-                                    <div class="meta">
-                                        <span class="date">Kodrk Portra160</span>
-                                    </div>
-                                    <div class="description">
-                                        教学楼旁，学生们不约而同的举起了手机，向着日落处。
-                                    </div>
-                                </div>
-                                <div class="extra content">
-                                    <span class="right floated">2021年10月 </span>
-                                    <span><i class="user icon"></i> Photo by 空空 </span>
-                                </div>
-
-                            </div>
-                            <div class="card">
-                                <div class="blurring dimmable image">
-                                    <div class="ui dimmer">
-                                        <div class="content">
-                                            <div class="center">
-                                                <div class="ui inverted button" onclick="window.location.href='./img_description.html'">高清原图</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <img src="./img_min/120/negative/N3_min.jpg">
-                                </div>
-                                <div class="content">
-                                    <div class="header">拍摄自己的相机</div>
-                                    <div class="meta">
-                                        <a>Kodrk Portra400</a>
-                                    </div>
-                                    <div class="description">
-                                        朋友A背着我的相机，而我用朋友B的相机拍下了这一幕。
-                                    </div>
-                                </div>
-                                <div class="extra content">
-                                    <span class="right floated">2021年10月 </span>
-                                    <span><i class="user icon"></i> Photo by 空空 </span>
-                                </div>
-
-                            </div>
-                            <div class="card">
-                                <div class="blurring dimmable image">
-                                    <div class="ui dimmer">
-                                        <div class="content">
-                                            <div class="center">
-                                                <div class="ui inverted button" onclick="window.location.href='./img_description.html'">高清原图</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <img src="./img_min/120/negative/N4_min.jpg">
-                                </div>
-                                <div class="content">
-                                    <div class="header">向阳而生</div>
-                                    <div class="meta">
-                                        <a>Kodrk Portra160</a>
-                                    </div>
-                                    <div class="description">
-                                        宿舍门前的树上，默默无闻、茁壮成长的枝芽。
-                                    </div>
-                                </div>
-                                <div class="extra content">
-                                    <span class="right floated">2021年10月 </span>
-                                    <span><i class="user icon"></i> Photo by 空空 </span>
-
-                                </div>
-                            </div>
-
-                        </div>
-                        <h4 class="ui dividing large header" id="B_W">
-                            黑白
-                        </h4>
-                        <div class="ui special cards">
-                            <div class="card">
-                                <div class="blurring dimmable image">
-                                    <div class="ui dimmer">
-                                        <div class="content">
-                                            <div class="center">
-                                                <div class="ui inverted button" onclick="window.location.href='./img_description.html'">高清原图</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <img src="./img_min/120/B&W/B1_min.jpg">
-                                </div>
-                                <div class="content">
-                                    <div class="header">围栏之外</div>
-                                    <div class="meta">
-                                        <a>Ilford HP5</a>
-                                    </div>
-                                    <div class="description">
-                                        学校围栏外，小朋友掂起了双脚看向校内。
-                                    </div>
-                                </div>
-                                <div class="extra content">
-                                    <span class="right floated">2021年11月 </span>
-                                    <span><i class="user icon"></i> Photo by 空空 </span>
-                                </div>
-
-                            </div>
-                            <div class="card">
-                                <div class="blurring dimmable image">
-                                    <div class="ui dimmer">
-                                        <div class="content">
-                                            <div class="center">
-                                                <div class="ui inverted button" onclick="window.location.href='./img_description.html'">高清原图</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <img src="./img_min/120/B&W/B2_min.jpg">
-                                </div>
-                                <div class="content">
-                                    <div class="header">温馨门前</div>
-                                    <div class="meta">
-                                        <span class="date">Ilford HP5</span>
-                                    </div>
-                                    <div class="description">
-                                        面包店的温馨与装修工人忙碌的身影，在傍晚时分形成了强烈的对比。
-                                    </div>
-                                </div>
-                                <div class="extra content">
-                                    <span class="right floated">2021年11月 </span>
-                                    <span><i class="user icon"></i> Photo by 空空 </span>
-                                </div>
-
-                            </div>
-
-
-                        </div>
+                        <div class="ui special cards"></div>
+                        <h4 class="ui dividing large header" id="B_W">黑白</h4>
+                        <div class="ui special cards"> </div>
                         <h4 class="ui dividing large header" id="positive">
                             彩色正片（反转片）
                         </h4>
-                        <div class="ui special cards">
-                            <div class="card">
-                                <div class="blurring dimmable image">
-                                    <div class="ui dimmer">
-                                        <div class="content">
-                                            <div class="center">
-                                                <div class="ui inverted button" onclick="window.location.href='./img_description.html'">高清原图</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <img src="./img_min/120/positive/P1_min.jpg">
-                                </div>
-                                <div class="content">
-                                    <div class="header">流浪猫们</div>
-                                    <div class="meta">
-                                        <a>FUJI POVIA 100F</a>
-                                    </div>
-                                    <div class="description">
-                                        校舍后面那些小邻居们。
-                                    </div>
-                                </div>
-                                <div class="extra content">
-                                    <span class="right floated">2021年11月 </span>
-                                    <span><i class="user icon"></i> Photo by 空空 </span>
-                                </div>
-
-                            </div>
-                            <div class="card">
-                                <div class="blurring dimmable image">
-                                    <div class="ui dimmer">
-                                        <div class="content">
-                                            <div class="center">
-                                                <div class="ui inverted button" onclick="window.location.href='./img_description.html'">高清原图</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <img src="./img_min/120/positive/P2_min.jpg">
-                                </div>
-                                <div class="content">
-                                    <div class="header">琶洲塔</div>
-                                    <div class="meta">
-                                        <span class="date">FUJI POVIA 100F</span>
-                                    </div>
-                                    <div class="description">
-                                        琶洲塔前，游客匆匆。
-                                    </div>
-                                </div>
-                                <div class="extra content">
-                                    <span class="right floated">2021年11月 </span>
-                                    <span><i class="user icon"></i> Photo by 空空 </span>
-                                </div>
-
-                            </div>
-                            <div class="card">
-                                <div class="blurring dimmable image">
-                                    <div class="ui dimmer">
-                                        <div class="content">
-                                            <div class="center">
-                                                <div class="ui inverted button" onclick="window.location.href='./img_description.html'">高清原图</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <img src="./img_min/120/positive/P3_min.jpg">
-                                </div>
-                                <div class="content">
-                                    <div class="header">晚霞下的图书馆</div>
-                                    <div class="meta">
-                                        <span class="date">FUJI POVIA 100F</span>
-                                    </div>
-                                    <div class="description">
-                                        那天我抱着相机，在校内追逐着转瞬即逝的红霞，却看见日暮下灯火通明的图书馆。
-                                    </div>
-                                </div>
-                                <div class="extra content">
-                                    <span class="right floated">2021年11月 </span>
-                                    <span><i class="user icon"></i> Photo by 空空 </span>
-                                </div>
-
-                            </div>
-
-
-                        </div>
+                        <div class="ui special cards"></div>
 
                     </div>
                 </div>
 
             </div>
             <div class="ui divider"></div>
-            <div class="ui list" style="padding: 50px;padding-left: 275px;">
+            <div class="ui list" style="padding: 50px;padding-left: 270px;">
                 <div class="item">
                     <i class="users icon"></i>
                     <div class="content">
@@ -348,7 +113,7 @@
                 <div class="item">
                     <i class="mail icon"></i>
                     <div class="content">
-                        <a href="aisakasora@icloud.com">aisakasora@icloud.com</a>
+                        aisakasora@icloud.com
                     </div>
                 </div>
                 <div class="item">
